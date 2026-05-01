@@ -56,7 +56,7 @@ Smart Farming Recommendation Generated Successfully
 
 🚀 Project Structure
 
-Intelligent-Chilli-Crop-Recommendation-System/
+Chilli-Crop-Recommendation-System/
 │
 ├── main.py
 ├── requirements.txt
@@ -72,8 +72,46 @@ Intelligent-Chilli-Crop-Recommendation-System/
 │   └── greenchilli2.pkl
 │
 ├── templates/
+│   ├── base.html
+│   ├── home.html
+│   ├── input.html
+│   ├── input1.html
+│   ├── intents.json
+│   ├── login.html
+│   ├── main.html
+│   ├── predict_chilli_type.html
+│   ├── predict_chilli_type1.html
+│   ├── register.html
+│   │
+│   └── mini/
+│       └── home.html
 │
 ├── static/
+│   ├── css/
+│   │   ├── styles.css
+│   │   └── styles1.css
+│   │
+│   ├── js/
+│   │   ├── jquery.blast.min.js
+│   │   └── main.js
+│   │
+│   ├── style/
+│   │   └── css.css
+│   │
+│   └── images/
+│       ├── cop.jpg
+│       ├── green_334.jpg
+│       ├── green_byadgi.jpg
+│       ├── green_chilli.jpg
+│       ├── green_sanam.jpg
+│       ├── green_teja.jpg
+│       ├── main.jpg
+│       ├── red_334.jpg
+│       ├── red_byadgi.jpg
+│       ├── red_chili.jpg
+│       ├── red_ramnad.jpg
+│       ├── red_sanam.jpg
+│       └── red_teja.jpg
 │
 └── README.md
 
