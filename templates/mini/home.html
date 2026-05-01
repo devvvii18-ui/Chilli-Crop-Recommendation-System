@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+	      <body style="background-color:#15435c;">
+	<title>Home</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+
+</head>
+<style>
+.nav {
+display: flex;
+background-color: white;
+color: black;
+align-items: center;
+background-color: #15435c;
+
+}
+
+.nav img {
+
+margin: 0px;
+margin-right: 530px;
+width: 60px;
+height: 60px;
+margin-top: 0px;
+background-color: #15435c;
+}
+.body{
+    margin-top: 10px;
+    background-color:aliceblue;
+    height: 750px;
+    width: auto;
+}
+.body h1{
+    text-align: center;
+    padding-top: 40px;
+}
+footer{
+    background-color: aqua;
+    margin-top: 0px;
+    height: 30px;
+    width: auto;
+    text-align: center;
+} 
+.bodyin{
+   background-color: #15435c;
+    margin-left: 300px;
+    margin-right: 300px;
+    height: 300px;
+}
+.btn{
+    margin-left: 850px;
+	
+}
+h1{
+color: white;
+text-align: center;
+}
+h3{
+color: white;
+text-align:center
+}
+
+a{
+    border-radius: 10px;
+        margin-left: 850px;
+    text-decoration: none;
+    height: 30px;
+    color: black;
+    background-color:white;
+    padding-top: 3px;
+    width: 120px;
+	text-align:center
+}
+img{
+ 
+   margin-left: 20px;
+}
+
+form{
+    text-align: center;
+}
+form{
+    text-align: center;
+}
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<div class="nav">
+
+ 
+    
+    <h1> Rule Pulse </h1>
+    <a   href="/"> <b>Home</b> </a>
+   
+    
+    </div>
+  <body class="maincon">
+ <header>
+		<div class="jumbotron text-center">
+		 <img src="static/images/fake.jpg" alt="" height="300px" width= "auto"  />
+		
+		</div>
+	</header>
+	 
+
+	<div class="container p-3 my-3 text-white text-justify" >
+		<div class="row">
+		<div class="col-xl-12">
+		<div class="form-group">
+			<form action="{{ url_for('predict')}}" method="POST">
+			<p class="font-weight-bold">Enter Here :</p>
+			<!-- <input type="text" name="comment"/> -->
+			<textarea name="comment" rows="5" cols="80" class="text-justify"></textarea>
+			<br/>
+			<button type="submit" class="btn btn-primary font-weight-bold text-white">Predict</button>
+			</form>
+		</div>	
+		</div>	
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+</body>
+</html>
+
+    </div>
+</body>
+ 
+</html>
