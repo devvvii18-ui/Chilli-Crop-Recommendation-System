@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    
+    <h2>Predicted Chili Type</h2>
+    <p>The predicted chili type for your input is: <strong>{{ chili_type }}</strong></p>
+    <h3>Suggested Fertilizers:</h3>
+    <ul>
+        {% for fertilizer in fertilizers %}
+        <li>{{ fertilizer }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Suggested Pesticides:</h3>
+    <ul>
+        {% for Pestisides in Pestisides %}
+        <li>{{ Pestisides }}</li>
+        {% endfor %}
+    </ul>
+    <h3>Suggested Disease:</h3>
+    <ul>
+        {% for Disease in Disease %}
+        <li>{{ Disease }}</li>
+        {% endfor %}
+    </ul>
+    <h3>Soil and Nutrient Recommendations:</h3>
+    <ul>
+        <li><strong>pH Level:</strong> {{ ph }}</li>
+        <li><strong>Nitrogen:</strong> {{ nitrogen }} kg/acre</li>
+        <li><strong>Phosphorus:</strong> {{ phosphorus }} kg/acre</li>
+        <li><strong>Potassium:</strong> {{ potassium }} kg/acre</li>
+        <li><strong>Water Requirement:</strong> {{ water }} liters/day</li>
+        <li><strong>Space Between Plants:</strong> {{ space }} centimeters</li>
+    </ul>
+    <p>The predicted production of yeild can be around <strong>{{ yield_pred }}</strong> Tons</p>
+    
+    <img src="{{ url_for('static', filename=chili_type_image) }}" alt="Chili Type Image" width="300" height="300">
+    
+
+   <br>
+    <br>
+    ,<br>
+</div>
+{% endblock %}

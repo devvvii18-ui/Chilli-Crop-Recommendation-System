@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <center>
+        <h2>Welcome to the Chili Yield and Type Predictor</h2>
+        <p>Use this application to predict the type of chili and the expected yield based on your input.</p>
+    </center>
+    <div class="container">
+        <center>
+            <h2>Sanam Chili</h2>
+            <p>Sanam chili is a popular variety of chili pepper commonly grown in India. It is known for its high yield and is often used in cooking.</p>
+            <img src="{{ url_for('static', filename='images/green_sanam.jpg') }}" alt="Green Sanam Chili" width="250" height="200">
+            <img src="{{ url_for('static', filename='images/red_sanam.jpg') }}" alt="Red Sanam Chili" width="250" height="200">
+        </center>
+    </div>
+    <div class="container">
+        <center>
+            <h2>Teja Chili</h2>
+            <p>Teja chili is a type of chili pepper known for its high heat and is often used in Indian cuisine. It is commonly grown in the southern regions of India.</p>
+            <img src="{{ url_for('static', filename='images/green_teja.jpg') }}" alt="Green Teja Chili" width="250" height="200">
+            <img src="{{ url_for('static', filename='images/red_teja.jpg') }}" alt="Red Teja Chili" width="250" height="200">
+        </center>
+    </div>
+    <div class="container">
+        <center>
+            <h2>334 Chili</h2>
+            <p>334 chili is a hybrid variety of chili pepper known for its high yield and disease resistance. It is commonly grown in India and is used in a variety of dishes.</p>
+            <img src="{{ url_for('static', filename='images/green_334.jpg') }}" alt="Green 334 Chili" width="250" height="200">
+            <img src="{{ url_for('static', filename='images/red_334.jpg') }}" alt="Red 334 Chili" width="250" height="200">
+        </center>
+    </div>
+    <div class="container">
+        <center>
+            <h2>Byadgi Chili</h2>
+            <p>Byadgi chili is a type of chili pepper commonly grown in the state of Karnataka, India. It is known for its high heat and is often used in cooking.</p>
+            <img src="{{ url_for('static', filename='images/green_byadgi.jpg') }}" alt="Green Byadgi Chili" width="250" height="200">
+            <img src="{{ url_for('static', filename='images/red_byadgi.jpg') }}" alt="Red Byadgi Chili" width="250" height="200">
+        </center>
+    </div>
+    <div class="container">
+        <center>
+            <h2>Ramnad Chili</h2>
+            <p>Ramnad chili is a type of chili pepper commonly grown in the state of Tamil Nadu, India. It is known for its high heat and is often used in cooking.</p>
+            <img src="{{ url_for('static', filename='images/green_chili.jpg') }}" alt="Chili Field" width="250" height="200">
+            <img src="{{ url_for('static', filename='images/red_ramnad.jpg') }}" alt="Chili Field" width="250" height="200">
+        </center>
+    </div>
+</div>
+
+{% endblock %}

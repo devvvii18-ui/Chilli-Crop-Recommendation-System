@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+</head>
+<style> 
+.nav {
+display: flex;
+background-color: white;
+color: black;
+align-items: center;
+background-color: #964B00;
+
+}
+
+.nav img {
+
+margin: 0px;
+margin-right: 530px;
+width: 60px;
+height: 60px;
+margin-top: 0px;
+background-color: #8B9467;
+}
+.body{
+    margin-top: 10px;
+    background-color:rgb(255, 255, 255);
+    height: 320px;
+    width: auto;
+}
+.body h1{
+    text-align: center;
+    padding-top: 40px;
+}
+footer{
+    background-color: #3E8E41;
+    margin-top: 0px;
+    height: 30px;
+    width: auto;
+    text-align: center;
+} 
+.bodyin{
+    background-color: #a77373;
+    margin-left: 300px;
+    margin-right: 300px;
+    height: 300px;
+}
+.btn{
+    margin-left: 850px;
+	
+}
+h1{
+color: #0a0501;
+
+}
+h3{
+color: #964B00;
+text-align:center
+}
+
+a{
+    border-radius: 10px;
+    margin-left: 30px;
+    text-decoration: none;
+    height: 20px;
+    color: black;
+    background-color:white;
+    padding-top: 3px;
+    width: 120px;
+	text-align:center
+}
+img{
+margin-top: 60px;
+   margin-left: 600px;
+}
+.image-container {
+    display: flex;
+    margin-left: 475px;
+}
+
+.image-container img {
+    margin: 10px;
+}
+
+form{
+    text-align: center;
+}
+</style>
+<div class="nav">
+
+     
+    
+    <h1> Chilli Predictor </h1>
+    <a class="btn" href="/"> <b>Main Page</b> </a>
+    
+     <a href="/register"><b>Register Page</b></a>
+</div>
+ 
+<body>
+    <div class="body">
+        <div class="bodyin">
+            <h1>Login Page</h1>
+            <form action="/login" method="POST">
+            
+                <label style="color: rgb(211, 122, 27)"for="email">Email: </label><br>
+                <input type="email" id="email" name="email"/> <br/>  
+                <label style="color: rgb(211, 122, 27)">Enter Password</label><br>  
+                <input type="Password" name="password"><br><br>
+                <input type="submit" value="submit">    
+            </form> 
+        </div>
+    </div>
+    <div class="container">
+        <center>
+            <h2>Type of Chillis</h2>
+            
+        </center>
+        <div class="container">
+            <center>
+                <h2>Sanam Chili</h2>
+                <p>Sanam chili is a popular variety of chili pepper commonly grown in India. It is known for its high yield and is often used in cooking.</p>
+                <div class="image-container">
+                    <center><img src="{{ url_for('static', filename='images/green_sanam.jpg') }}" alt="Green Sanam Chili" width="250" height="200"></center>
+                    <center><img src="{{ url_for('static', filename='images/red_sanam.jpg') }}" alt="Red Sanam Chili" width="250" height="200"></center>
+                </div>
+            </center>
+        <div class="container">
+            <center>
+                <h2>Teja Chili</h2>
+                <p>Teja chili is a type of chili pepper known for its high heat and is often used in Indian cuisine. It is commonly grown in the southern regions of India.</p>
+                <div class="image-container">
+                    <center><img src="{{ url_for('static', filename='images/green_teja.jpg') }}" alt="Green Teja Chili" width="250" height="200"></center>
+                    <center><img src="{{ url_for('static', filename='images/red_teja.jpg') }}" alt="Red Teja Chili" width="250" height="200"></center>
+                </div>
+            </center>
+        </div>
+        <div class="container">
+            <center>
+                <h2>334 Chili</h2>
+                <p>334 chili is a hybrid variety of chili pepper known for its high yield and disease resistance. It is commonly grown in India and is used in a variety of dishes.</p>
+                <div class="image-container">
+                    <center><img src="{{ url_for('static', filename='images/green_334.jpg') }}" alt="Green 334 Chili" width="250" height="200"></center>
+                    <center><img src="{{ url_for('static', filename='images/red_334.jpg') }}" alt="Red 334 Chili" width="250" height="200"></center>
+                </div>
+            </center>
+        </div>
+        <div class="container">
+            <center>
+                <h2>Byadgi Chili</h2>
+                <p>Byadgi chili is a type of chili pepper commonly grown in the state of Karnataka, India. It is known for its high heat and is often used in cooking.</p>
+                <div class="image-container">
+                    <center><img src="{{ url_for('static', filename='images/green_byadgi.jpg') }}" alt="Green Byadgi Chili" width="250" height="200"></center>
+                    <center><img src="{{ url_for('static', filename='images/red_byadgi.jpg') }}" alt="Red Byadgi Chili" width="250" height="200"></center>
+                </div>
+            </center>
+        </div>
+        <div class="container">
+            <center>
+                <h2>Ramnad Chili</h2>
+                <p>Ramnad chili is a type of chili pepper commonly grown in the state of Tamil Nadu, India. It is known for its high heat and is often used in cooking.</p>
+                <div class="image-container">
+                    <center><img src="{{ url_for('static', filename='images/green_chili.jpg') }}" alt="Chili Field" width="250" height="200"></center>
+                    <center><img src="{{ url_for('static', filename='images/red_ramnad.jpg') }}" alt="Chili Field" width="250" height="200"></center>
+                </div>
+            </center>
+        </div>
+    </div>
+</body>
+<footer> 
+  
+</footer>
+</html>
